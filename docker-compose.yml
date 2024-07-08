@@ -1,0 +1,12 @@
+version: '1.0'
+
+services:
+  test-orchestrator:
+    image: test-orchestrator
+    build:
+      context: .
+      dockerfile: ./docker/playwright/Dockerfile
+    volumes:
+      - results:/imaging-playwright/playwright-report
+volumes:
+  results:
