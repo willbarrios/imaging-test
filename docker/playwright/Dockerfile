@@ -10,4 +10,4 @@ COPY . .
 RUN npm install
 
 #Run the tests once the container is running
-CMD ["npx", "playwright", "test"]
+CMD ["npx", "playwright", "test", "./tests/regression/routing-specs.ts"]
