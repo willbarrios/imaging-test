@@ -1,0 +1,41 @@
+{
+    "consumer": {
+      "name": "ImageUploader"
+    },
+    "provider": {
+      "name": "ImageViewer"
+    },
+    "interactions": [
+      {
+        "description": "a request to send image metadata",
+        "providerState": "image metadata exists",
+        "request": {
+          "method": "POST",
+          "path": "/images",
+          "headers": {
+            "Content-Type": "application/json"
+          },
+          "body": {
+            "id": "123",
+            "name": "MRI Scan",
+            "type": "MRI",
+            "date": "2024-01-01"
+          }
+        },
+        "response": {
+          "status": 200,
+          "headers": {
+            "Content-Type": "application/json"
+          },
+          "body": {
+            "success": true
+          }
+        }
+      }
+    ],
+    "metadata": {
+      "pactSpecification": {
+        "version": "1.0.0"
+      }
+    }
+  }  
