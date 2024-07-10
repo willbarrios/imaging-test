@@ -1,2 +1,2 @@
 export const maximumResponseTime = 1000;
-export const landingPage = "https://www.dedalus.com/global/en/";
+export const commercial_website_startpage = "https://www.playwright.com";

@@ -1,8 +1,8 @@
 import type { Page, Locator } from '@playwright/test';
-import { maximumResponseTime, landingPage } from '../../const/commercial-website';
+import { maximumResponseTime, commercial_website_startpage } from '../../const/commercial-website';
 import { measurePerformance } from '../../utils/performance';
 
-export class LandingPage {
+export class StartPage {
   constructor(public readonly page: Page) {
   }
 
